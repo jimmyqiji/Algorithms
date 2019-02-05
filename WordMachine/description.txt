@@ -1,0 +1,8 @@
+Commands:
+DUP
+[integer]
+POP
++
+-
+
+reads commands from a string and pushes integers to stack, perform operations and return the top of the stack
