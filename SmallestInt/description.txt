@@ -1,0 +1,1 @@
+given an int, find smallest int with same number of digits
