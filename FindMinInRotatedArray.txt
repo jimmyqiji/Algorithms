@@ -1,0 +1,25 @@
+Find min:
+[5, 7, 1, 2, 3, 4]
+
+
+for i in range(1, len(arr)):
+	if arr[i] < arr[i-1]:
+  	return arr[i]
+    
+    
+    
+def findMinFromRotatedArray(arr):
+	if len(arr) == 0:
+  	return
+  lo = 0
+  hi = len(arr)-1
+  smallest = arr[0]
+
+  while lo < hi:
+    mid = (lo + hi) // 2
+    if arr[mid] < smallest:
+      hi = mid
+      smallest = arr[mid]
+    else:
+      lo = mid + 1
+  return arr[lo]
